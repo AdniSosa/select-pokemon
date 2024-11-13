@@ -1,1 +1,12 @@
-
+.info-pokemon h3::before{
+    content: "Name:";
+    font-weight: bold;
+}
+/* .info-pokemon .peso-pokemon::before{
+    content: "Peso:";
+    font-weight: bold;
+}
+.info-pokemon .altura-pokemon::before{
+    content: "Altura:";
+    font-weight: bold;
+} */
