@@ -25,18 +25,18 @@ const getInfo = (pokemon) => {
         img.src = pokemonImg
         img.alt = pokemonName;
 
-        const pokemonType = data.types.type.name;
+        const pokemonType = data.types[0].type.name;
         const pType = document.createElement("p");
-        pType.textContent =pokemonType;
+        pType.textContent = 'Type: ' + pokemonType;
     
         const pokemonWeight = data.weight;
         const pWeight = document.createElement("p");
-        pWeight.textContent =pokemonWeight;
+        pWeight.textContent = 'Weight: ' + pokemonWeight;
         /* pWeight.classList.add("peso-pokemon"); */
 
         const pokemonHeight = data.height;
         const pHeight = document.createElement("p");
-        pHeight.textContent =pokemonHeight;
+        pHeight.textContent ='Height: ' + pokemonHeight;
         /* pHeight.classList.add("altura-pokemon"); */
 
         div.appendChild(img);
